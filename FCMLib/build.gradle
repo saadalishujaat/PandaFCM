@@ -43,3 +43,23 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
 
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.saadalishujaat'
+                artifactId = 'PandaFCM'
+                version = '1.0'
+            }
+            debug(MavenPublication) {
+                from components.debug
+                groupId = 'com.github.saadalishujaat'
+                artifactId = 'PandaFCM'
+                version = '1.0'
+            }
+
+        }
+    }
+}
