@@ -45,7 +45,7 @@ Add maven repository in project level build.gradle.
 Add PandaFCM dependencies in App level build.gradle.
 ```
     dependencies {
-        implementation 'com.github.saadalishujaat:FCMLib:v1.0' 
+        implementation 'com.github.saadalishujaat:PandaFCM:v1.0'
     }
 ```  
 
